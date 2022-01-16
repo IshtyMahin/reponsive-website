@@ -120,6 +120,9 @@ main{
 
 
 @media only screen and (max-width:688px){
+    html.body{
+        overflow-x: hidden;
+    }
     .menu{
         display: none;
     }
@@ -136,8 +139,7 @@ main{
     .main-camera img{
        width: 100%;
     }
-     .secound-section{
-     }
+     
     .containers{
         grid-template-columns: repeat(1,1fr);
         justify-content: center;
