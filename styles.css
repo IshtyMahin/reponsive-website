@@ -33,7 +33,9 @@ header h1{
 main{
     padding: 20px;
 }
- 
+ section{
+     margin-top: 10px;
+ }
  .first-section{
     
     display: flex;
@@ -48,14 +50,29 @@ main{
     border-radius: 40px;
     font-size: 20px;
     cursor: pointer;
+    transition: transform 2s;
 }
 .btn:hover{
     background-color:#af2155 ;
+    transform: scale(1.1);
 }
  .main-camera img{
      background-image: url(images/Circle\ design.svg);
      background-repeat: no-repeat;
      background-size: contain;
+     transition: transform 2s;
+ }
+ .main-camera img:hover{
+     transform: scale(1.1) rotate(360deg);
+ }
+ hr{
+     border-top:3px solid red ;
+ }
+ 
+ .logos{
+     display: flex;
+     justify-content: space-evenly;
+     padding: 10px;
  }
  .secound-section h1{
     text-align: center;
@@ -111,9 +128,7 @@ main{
 .fab:hover{
   color: #E02C6D;
 }
-.btn:hover{
-    transform: scale(1.1);
-}
+
 
 
 /* footer end  */
@@ -132,12 +147,17 @@ main{
     }
     
     .first-section,.third-section{
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         flex-direction: column-reverse;
     }
-    
+    .logos{
+        flex-wrap: wrap;
+    }
     .main-camera img{
        width: 100%;
+    }
+    .first-info{
+        margin-top: 10px;
     }
      
     .containers{
