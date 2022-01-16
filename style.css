@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f8f5f5;
+}
+
+* {
+    box-sizing: border-box;
+  }
+ /* header start  */
+
+  header{
+      display: flex;
+      justify-content: space-between;
+  }
+  header h1{
+      font-size: 24px;
+      padding-left: 20px;
+      margin-top: 5px;
+  }
+ 
+  .menu{
+      list-style: none;
+      display: flex;
+  }
+  .menu>li>a{
+      text-decoration: none;
+      margin: 10px;
+  }
+  .menu-bar{
+      display: none;
+  }
+.title{
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+}
+.title::before{
+    content: 'Start your journey as Influencer';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #E02C6D;
+    animation: typing 4s linear infinite;
+}
+
+/* header end  */
+
+/* main start  */
+main{
+    /* width: 80%;
+    margin: 0 auto; */
+    padding: 30px;
+    
+}
+section{
+    margin-top: 30px;
+}
+.first-info{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* width: 50%; */
+}
+.first-info h1{
+    font-weight: 700px;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+.btn{
+    background-color: #E02C6D;
+    color: white;
+    width: 40%;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#af2155 ;
+}
+.first-section{
+    display: flex;
+    justify-content:space-between
+}
+
+.main-camera img{
+   width: 100%;
+   height: auto;
+   /* padding: 30px; */
+   background-image: url(images/Circle\ design.svg);
+   background-repeat: no-repeat;
+   background-size:contain ;
+}
+/* section 1 complete */
+.secound-section h1{
+    text-align: center;
+}
+.container{
+     background-color: rgb(235, 235, 235);
+     padding: 20px;
+     border-radius: 10px;
+     line-height: 1.2em;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+}
+.containers{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap: 25px;
+}
+.secound-section>div>a{
+    text-decoration: none;
+    color: #E02C6D;
+    padding: 0,15px;
+    font-size: 20px;
+}
+.link-style{
+   
+    text-align: right;
+    margin-top: 5px;
+}
+.secound-section p, span{
+    color: #787885;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color:#AEAEAE;
+}
+
+ /* 2nd section end   */
+
+ .third-section{
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 10px;
+ }
+  
+
+/* main end  */
+
+/* footer start */
+footer{
+      color: white;
+      background-color: rgb(14, 14, 34);
+      text-align: center;
+      padding: 10px;
+      line-height: 1em;
+}
+.footer>p{
+    margin-bottom:5px;
+}
+.fab{
+    font-size: 25px;
+}
+.fab:hover{
+    color: #E02C6D;
+}
+
+/* footer end  */
+
+
+/* Animation start  */
+
+        content: '|';
+    }/* @keyframes typing {
+    0% {
+        content: '|';
+    }
+
+    2% {
+        content: 'S|';
+    }
+    4% {
+        content: 'St|';
+    }
+    6% {
+        content: 'Sta|';
+    }
+    8% {
+        content: 'Star|';
+    }
+    10% {
+        content: 'Start|';
+    }
+    12% {
+        content: 'Start |';
+    }
+    14% {
+        content: 'Start y|';
+    }
+
+    16% {
+        content: 'Start yo|';
+    }
+
+    18% {
+        content: 'Start you|';
+    }
+
+    20% {
+        content: 'Start your|';
+    }
+    22% {
+        content: 'Start your |';
+    }
+    24% {
+        content: 'Start your j|';
+    }
+    26% {
+        content: 'Start your jo|';
+    }
+    28% {
+        content: 'Start your jou|';
+    }
+
+    30% {
+        content: 'Start your jour|';
+    }
+
+    32% {
+        content: 'Start your journ|';
+    }
+
+    34% {
+        content: 'Start your journe|';
+    }
+
+    36% {
+        content: 'Start your journey|';
+    }
+    38% {
+        content: 'Start your journey |';
+    }
+
+    40% {
+        content: 'Start your journey a|';
+    }
+    42% {
+        content: 'Start your journey as|';
+    }
+    44% {
+        content: 'Start your journey as |';
+    }
+    46% {
+        content: 'Start your journey as I|';
+    }
+
+    48% {
+        content: 'Start your journey as In|';
+    }
+
+    50% {
+        content: 'Start your journey as Inf|';
+    }
+
+    52% {
+        content: 'Start your journey as Infl|';
+    }
+    54% {
+        content: 'Start your journey as Influ|';
+    }
+
+    56% {
+        content: 'Start your journey as Influe|';
+    }
+
+    58% {
+        content: 'Start your journey as Influen|';
+    }
+    60%{
+        content: 'Start your journey as Influenc|';
+    }
+    62%{
+        content: 'Start your journey as Influence|';
+    }
+    64%{
+        content: 'Start your journey as Influencer|';
+    }
+
+    65%,
+    83% {
+        content: 'Start your journey as Influencer|';
+    }
+
+    84% {
+        content: 'Start your journey as Influence|';
+    }
+
+    85% {
+        content: 'Start your journey as Influe|';
+    }
+
+    86% {
+        content: 'Start your journey as Infl|';
+    }
+
+    87% {
+        content: 'Start your journey as In|';
+    }
+
+    88% {
+        content: 'Start your journey as ';
+    }
+
+    89% {
+        content: 'Start your journey a|';
+    }
+
+    90% {
+        content: 'Start your journey|';
+    }
+
+    91% {
+        content: 'Start your journ|';
+    }
+
+    92% {
+        content: 'Start your jou|';
+    }
+
+    93% {
+        content: 'Start your j|';
+    }
+
+    94% {
+        content: 'Start your|';
+    }
+
+    95% {
+        content: 'Start yo|';
+    }
+
+    96% {
+        content: 'Start |';
+    }
+
+    97% {
+        content: 'Star|';
+    }
+
+    98% {
+        content: 'St|';
+    }
+
+    99% {
+        content: 'S|';
+    }
+
+    100% {
+} */
+
+/* Animation End  */
+
+/* media query  */
+@media (max-width: 420px) {
+    body{
+   background:pink;
+  }
+@media only screen and (max-width:688px) {
+   
+   body{
+       background-color: rgb(223, 162, 70);
+   }
+   .first-section{
+    /* flex-direction: column-reverse; */
+    display: flex;
+    /* flex-wrap: wrap; */
+
+   }
+   .first-info.btn{
+       width: 100%;
+   }
+   /* .main-camera>img{
+       width: 50%;
+   } */
+   /* .first-info{
+       display: flex;
+       flex-wrap: wrap;
+   } */
+   /* .first-info{
+       width:;
+   } */
+   
+   .containers{
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 5px;
+    width: 100%;
+    margin: 0 auto;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .third-section{
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+  }
+  footer{
+      width: 100vh;
+  }
+}
+
+@media (max-width: 420px) {
+    body{
+   background:pink;
+  }
+
+/* 
+@media only screen and (max-width:688px) {
+
+    header{
+        width: 100%;
+    }
+     .menu{
+              display: none;
+     }
+     .menu-bar{
+           display: block;
+
+       }
+       .first-section{
+        display: flex;   
+        flex-direction: column-reverse
+     }
+     .first-info{
+         width:100vh;
+     }
+  .secound-section{
+      width: 100vh;
+  }
+   .containers{
+     grid-template-columns: repeat(1,1fr);
+   }
+   .link-style{
+       text-align: center;
+   }
+   .third-section{
+       flex-direction: column-reverse;
+       justify-content: center;
+   }
+   .third-section>div{
+       width: 200%;
+   }
+   footer{
+       width: 110vh;
+   }
+}
+@media only screen and (min-width:689px) and (max-width:992px){
+    
+    .first-section{
+        display: flex;   
+        flex-direction: column-reverse
+     }
+     .first-info{
+        width:100vh;
+    }
+  .secound-section{
+      width: 100vh;
+  }
+    .containers{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .link-style{
+        text-align: left;
+    }
+    .third-section{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .third-section>div{
+        width: 100%;
+    }
+   footer{
+       width: 130vh;
+   }
+} */
