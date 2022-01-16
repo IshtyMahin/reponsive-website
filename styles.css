@@ -12,10 +12,10 @@ body{
  header{
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 header h1{
     font-size: 24px;
-    padding-left: 20px;
     margin-top: 5px;
 }
 
@@ -127,9 +127,7 @@ main{
         display: block;
         margin-top: 12px;
     }
-    main{
-        width: 100%;
-    }
+    
     .first-section,.third-section{
         flex-wrap: wrap;
         flex-direction: column-reverse;
